@@ -1,0 +1,6 @@
+environment:
+  - JAVA_TOOL_OPTIONS=-Xmx128000K
+deploy:
+  resources:
+    limits:
+      memory: 800m

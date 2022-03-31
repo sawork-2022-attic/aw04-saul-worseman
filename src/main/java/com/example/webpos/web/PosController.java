@@ -42,4 +42,12 @@ public class PosController {
         model.addAttribute("cart", cart);
         return "index";
     }
+
+    @GetMapping("/add/test")
+    public String addTest( String pid, Model model) {
+        posService.add(cart, posService.products().get(0), 1);
+        model.addAttribute("products", posService.products());
+        model.addAttribute("cart", cart);
+        return "index";
+    }
 }
