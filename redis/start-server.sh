@@ -2,6 +2,6 @@
 for d in ./*/ ; do (cd "$d" && redis-server ./redis.conf &); done
 
 
-redis-cli --cluster create 127.0.0.1:7000 127.0.0.1:7001 \
-127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 \
---cluster-replicas 1 &
+redis-cli --cluster create 127.0.0.1:8000 127.0.0.1:8001 \
+127.0.0.1:8002 127.0.0.1:8003 127.0.0.1:8004 127.0.0.1:8005 \
+--cluster-replicas 1
