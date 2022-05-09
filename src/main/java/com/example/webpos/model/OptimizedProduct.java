@@ -9,7 +9,9 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Item implements Serializable {
-    private OptimizedProduct product;
-    private int quantity;
+public class OptimizedProduct implements Serializable {
+    private String id;
+    private String name;
+    private double price;
+    private String image;
 }
